@@ -68,7 +68,7 @@ WHERE priority > 1;
 -- Write an UPDATE statement to complete one todo by its id.
 UPDATE todos
 SET completed_at = now()
-WHERE id = 1;
+WHERE id = 5;
 -- Write a DELETE statement to delete all completed todos.
 DELETE FROM todos
 WHERE completed_at IS NOT NULL;
