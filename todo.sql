@@ -20,21 +20,21 @@ INSERT INTO todos (
 VALUES (
             'wash car',
             'mix some soap and water and wash car',
-            3,
+            1,
             '8/8/2017',
-            NULL
+            '8/8/2017'
           ),
           (
             'clean my underoos',
             'mix some soap and water and wash underoos',
-            1,
+            10,
             '8/8/2017',
-            NULL
+            '8/8/2017'
           ),
           (
             'walk the kronos monster',
             'walk my dog around the neighborhood',
-            2,
+            5,
             '8/8/2017',
             NULL
           ),
@@ -48,7 +48,7 @@ VALUES (
           (
             'play Destiny 2',
             'whoop some dudes in the crucible and maybe complete a raid',
-            5,
+            8,
             '8/8/2017',
             NULL
           );
@@ -67,7 +67,7 @@ FROM todos
 WHERE priority > 1;
 -- Write an UPDATE statement to complete one todo by its id.
 UPDATE todos
-SET completed_at = '8/8/2017'
+SET completed_at = now()
 WHERE id = 1;
 -- Write a DELETE statement to delete all completed todos.
 DELETE FROM todos
